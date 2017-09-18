@@ -9,4 +9,4 @@ OUTDIR="$ROOT/CodeGenDemo/CodeGen/Constants"
 "$SWIFTGEN" storyboards "$INDIR" -t swift3 -o "$OUTDIR"/Storyboards.swift
 "$SWIFTGEN" xcassets "$INDIR/Resources/Assets.xcassets" -t swift3 -o "$OUTDIR"/Assets.swift
 "$SWIFTGEN" fonts "$INDIR/Resources" -t swift3 -o "$OUTDIR"/Fonts.swift
-"$SWIFTGEN" colors "$INDIR/Resources/colors.xml" -t swift3 -o "$OUTDIR"/Colors.swift
+"$SWIFTGEN" colors "$INDIR/Resources/colors.xml" -p "$ROOT/colors.stencil" -o "$OUTDIR"/Colors.swift
