@@ -24,22 +24,13 @@ extension Color {
 // swiftlint:enable operator_usage_whitespace
 
 // swiftlint:disable identifier_name line_length type_body_length
-struct ColorName {
-  let rgbaValue: UInt32
-  var color: Color { return Color(named: self) }
-
+enum ColorName {
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#4c4c4c"></span>
   /// Alpha: 100% <br/> (0x4c4c4cff)
-  static let fieldLabel = ColorName(rgbaValue: 0x4c4c4cff)
+  static let fieldLabel = Color(rgbaValue: 0x4c4c4cff)
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#000080"></span>
   /// Alpha: 100% <br/> (0x000080ff)
-  static let sectionTitle = ColorName(rgbaValue: 0x000080ff)
+  static let sectionTitle = Color(rgbaValue: 0x000080ff)
 }
 // swiftlint:enable identifier_name line_length type_body_length
-
-extension Color {
-  convenience init(named color: ColorName) {
-    self.init(rgbaValue: color.rgbaValue)
-  }
-}
 

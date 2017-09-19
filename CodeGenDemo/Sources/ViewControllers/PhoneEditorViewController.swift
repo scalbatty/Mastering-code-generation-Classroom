@@ -28,11 +28,11 @@ class PhoneEditorViewController: UIViewController {
 
     self.phoneModelTitleLabel.text = L10n.Phoneeditor.Title.model
     self.phoneModelTitleLabel.font = FontFamily.Avenir.medium.font(size: 12)
-    self.phoneModelTitleLabel.textColor = ColorName.sectionTitle.color
+    self.phoneModelTitleLabel.textColor = ColorName.sectionTitle
 
     self.phoneNameLabel.text = L10n.Phoneeditor.Title.name
     self.phoneNameLabel.font = FontFamily.Avenir.medium.font(size: 12)
-    self.phoneNameLabel.textColor = ColorName.sectionTitle.color
+    self.phoneNameLabel.textColor = ColorName.sectionTitle
 
     self.randomButton.setTitle(L10n.Phoneeditor.Random.button, for: .normal)
   }
